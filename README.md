@@ -41,4 +41,4 @@ urllib.request.urlretrieve(origin, dataset)
 
 
 ## 4. pyCharm (2016.1) 添加 python 路径
-![tips4-0](fig/tips4-0.png)
+![tips4-0](./fig/tips4-0.png)
