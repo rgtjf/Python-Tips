@@ -28,3 +28,17 @@ with open(mshelffile, 'rb') as f:
     d = pickle.load(f, encoding='latin1') 
 ```
 
+## 3. download file from Internet in Python
+
+```python
+import urllib.request, urllib.parse, urllib.error
+
+origin = 'https://raw.githubusercontent.com/brmson/dataset-sts/master/data/para/msr/msr-para-train.tsv'
+dataset = 'msr-para-train.tsv'
+print('Downloading data from %s' % origin)
+urllib.request.urlretrieve(origin, dataset)
+```
+
+
+## 4. pyCharm (2016.1) 添加 python 路径
+![tips4-0](fig/tips4-0.png)
