@@ -42,3 +42,11 @@ urllib.request.urlretrieve(origin, dataset)
 
 ## 4. pyCharm (2016.1) 添加 python 路径
 ![tips4-0](figs/tips4-0.png)
+
+## 5. Add Python Path In Linux
+1. http://stackoverflow.com/questions/3402168/permanently-add-a-directory-to-pythonpath
+2. 
+```
+vi ~/.bashrc
+export PYTHONPATH=${PYTHONPATH}:path1:path2
+```
