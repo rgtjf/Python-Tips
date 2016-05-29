@@ -50,3 +50,12 @@ urllib.request.urlretrieve(origin, dataset)
 vi ~/.bashrc
 export PYTHONPATH=${PYTHONPATH}:path1:path2
 ```
+
+## 6. Git Operation
+```git
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/rgtjf/test.git
+git push -u origin master
+```
