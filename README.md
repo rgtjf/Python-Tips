@@ -62,9 +62,9 @@ git push -u origin master
 
 ## 7. Python Deployment and Subversion Configuration
 1. Python Deployment: 映射到服务器, 可以上传, 下载
-![tips7-1](figs/tips-7-1.png)
+![tips7-1](figs/tips7-1.png)
 2. Share Project to Subversion: 映射到Subversion, 代码管理
-![tips7-2](figs/tips-7-2.png)
+![tips7-2](figs/tips7-2.png)
 3. How to setup Subversion in Ubuntu
 http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 
