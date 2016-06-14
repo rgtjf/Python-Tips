@@ -70,7 +70,7 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 
 ## 8.tmux
 ### 进入tmux
-输入tmux 进入
+- 输入tmux 进入
 
 #### 常见操作
 - 分屏
@@ -81,8 +81,8 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
   - Ctrl+b, &； 退出当前所有
   
 ### 退出tmux
-  Ctrl+b, d: 退出并保留，下次可以重新进入
+- Ctrl+b, d: 退出并保留，下次可以重新进入
 
 ### 重新进入tmux
-  tmux ls: 列出当前有哪些tmux窗口
-  tmux attach -t 0: 重新连接第1个tmux窗口
+- tmux ls: 列出当前有哪些tmux窗口
+- tmux attach -t 0: 重新连接第1个tmux窗口
