@@ -72,7 +72,7 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 ### 进入tmux
 - 输入tmux 进入
 
-#### 常见操作
+### 分屏操作
 - 分屏
   - Ctrl+b, ”：（先同时按住Ctrl和b, 然后按住”） 将当前面板平分为上下两块
   - Ctrl+b, %： 将当前面板平分为左右两块
