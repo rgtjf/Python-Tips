@@ -69,17 +69,20 @@ git push -u origin master
 http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 
 ## 8.tmux
-###进入tmux
-输入tmux进入
-####常见操作
+### 进入tmux
+输入tmux 进入
+
+#### 常见操作
 - 分屏
   - Ctrl+b, ”：（先同时按住Ctrl和b, 然后按住”） 将当前面板平分为上下两块
   - Ctrl+b, %： 将当前面板平分为左右两块
 - 去掉屏
   - Ctrl+b, x： 退出当前分出的一块小屏
   - Ctrl+b, &； 退出当前所有
-###退出tmux
+  
+### 退出tmux
   Ctrl+b, d: 退出并保留，下次可以重新进入
-###重新进入tmux
+
+### 重新进入tmux
   tmux ls: 列出当前有哪些tmux窗口
   tmux attach -t 0: 重新连接第1个tmux窗口
