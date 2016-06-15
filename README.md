@@ -86,3 +86,7 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 ### 重新进入tmux
 - tmux ls: 列出当前有哪些tmux窗口
 - tmux attach -t 0: 重新连接第1个tmux窗口
+
+### 其他
+- Ctrl+b, PageUp: 在session中读取以前的页面，按~键退出
+- Ctrl+b, 左右方向将：修改panel大小
