@@ -104,7 +104,7 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 - Running a public notebook server on shell(Ubuntu)
 
   ```
-  jupyter notebook --no-browser
+  $ jupyter notebook --no-browser
   ```
 - Allow from other computer
   Setting ~/.jupyter/jupyter_notebook_config.py.
