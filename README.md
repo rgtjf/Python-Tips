@@ -97,15 +97,18 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
   create a notebook configuration file, ~/.jupyter/jupyter_notebook_config.py.
   
   If you don’t already have one, create a config file for the notebook using the following command:
+
   ```
   $ jupyter notebook --generate-config
   ```
 - Running a public notebook server on shell(Ubuntu)
+
   ```
   jupyter notebook --no-browser
   ```
 - Allow from other computer
   Setting ~/.jupyter/jupyter_notebook_config.py.
+
   ```
   # Set ip to '*' to bind on all interfaces (ips) for the public server
   c.NotebookApp.ip = '*'
