@@ -90,3 +90,23 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 ### 其他
 - Ctrl+b, PageUp: 在session中读取以前的页面，按~键退出
 - Ctrl+b, 左右方向将：修改panel大小
+
+## 9.jupyter-notebook
+- Ref: http://jupyter-notebook.readthedocs.io/en/latest/public_server.html
+- Prerequisite: A notebook configuration file
+  create a notebook configuration file, ~/.jupyter/jupyter_notebook_config.py.
+  
+  If you don’t already have one, create a config file for the notebook using the following command:
+  ```
+  $ jupyter notebook --generate-config
+  ```
+- Running a public notebook server on shell(Ubuntu)
+  ```
+  jupyter notebook --no-browser
+  ```
+- Allow from other computer
+  Setting ~/.jupyter/jupyter_notebook_config.py.
+  ```
+  # Set ip to '*' to bind on all interfaces (ips) for the public server
+  c.NotebookApp.ip = '*'
+  ```
