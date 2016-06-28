@@ -125,9 +125,9 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 - Solution:
   
   ```
-  export CUDA_VISIBLE_DEVICES=1
+  $ export CUDA_VISIBLE_DEVICES=1
   ```
   
   ```
-  ln -s /usr/lib/x86_64-linux-gnu/libcuda.so.1 /usr/lib/x86_64-linux-gnu/libcuda.so
+  $ sudo ln -s /usr/lib/x86_64-linux-gnu/libcuda.so.1 /usr/lib/x86_64-linux-gnu/libcuda.so
   ```
