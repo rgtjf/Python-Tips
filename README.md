@@ -121,7 +121,8 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
   - Couldn't open CUDA library libcudnn.so
   - No GPU devices available on machine.
   ```
-  - Solution:
+
+- Solution:
   
   ```
   export CUDA_VISIBLE_DEVICES=1
