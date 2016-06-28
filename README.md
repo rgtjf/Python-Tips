@@ -116,12 +116,17 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 
 ## 10.solve GPU device not found on Ubuntu 14.04
 - Error: 
+  ```
   - CUDA_ERROR_NO_DEVICE
   - Couldn't open CUDA library libcudnn.so
   - No GPU devices available on machine.
-- Solution:
+  ```
+  - Solution:
+  
   ```
   export CUDA_VISIBLE_DEVICES=1
+  ```
+  
   ```
   ln -s /usr/lib/x86_64-linux-gnu/libcuda.so.1 /usr/lib/x86_64-linux-gnu/libcuda.so
   ```
