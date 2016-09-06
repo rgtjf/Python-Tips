@@ -156,10 +156,10 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 
 - [How to learn vim](https://github.com/dofy/learn-vim)
 
-- ![tips12-0](figs/tips12-0.gif)]
+- ![tips12-0](figs/tips12-0.gif)
 
-- ![tips12-1](figs/tips12-1.png)]
+- ![tips12-1](figs/tips12-1.png)
 
-- ![tips12-2](figs/tips12-2.png)]
+- ![tips12-2](figs/tips12-2.png)
 
-- ![tips12-3](figs/tips12-3.png)]
+- ![tips12-3](figs/tips12-3.png)
