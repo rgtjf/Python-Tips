@@ -131,3 +131,35 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
   ```
   $ sudo ln -s /usr/lib/x86_64-linux-gnu/libcuda.so.1 /usr/lib/x86_64-linux-gnu/libcuda.so
   ```
+
+## 11.PyCharm使用技巧
+
+- `ctrl+alt+L`, 格式化代码
+- `alt+enter`, 出错万能键，不同场景有不同的表现方式，在还没import(install)模块名上使用会import(install)相对应的模块，在方法名上使用补注释，在测试中使用帮你补充断言代码……
+- `ctrl+space`, 万能提示键 `ctrl+space` 万能提示键，PyCharm的会根据上下文提供补全。不仅是代码提示，`ctrl+f`搜索的时候，不知道该键入啥时就按下，经常给人惊喜。在windows下由于输入法无法使用这个快捷键，`ctrl+alt+s`打开设置键入 keymap，在Keymap中搜索basic可以找到并修改它 (改为`shift+H`)
+- 阅读代码快捷键
+  - `ctrl+q`, 查注释 
+  - `ctrl+shift+i`, 没注释时查源码 
+  - `ctrl+p`, 调用方法时查看参数，在括号内按下，就知道当前位置该给啥参数，不过由于是Python，这里使用`ctrl+space`也可以达到很好的效果
+- 变量或表达式的最后键入`.(点)`，出现提示后，看最下面的部分有各种代码模板，例如现有变量a，在下一行键入 a.(点)print 然后键入`tab`，Python2会变成`print a`，Python3会变成`print(a)`，还有if,else等各种常用的代码模板
+- 双击`shift`搜索一切，不管是IDE功能、文件、方法、变量……都能搜索
+- 写代码时快捷键
+  - ctrl + / 快速注释
+  - ctrl + d 复制光标所在的行
+- 本机编辑，运行时使用了远程环境，省去了环境切换的麻烦。
+- Reference: https://www.zhihu.com/question/37787004
+
+
+## 12.Vim装逼指南
+
+- [老司机乱谈编辑器之神——vim移动研发](http://bbs.utest.qq.com/524)
+
+- [How to learn vim](https://github.com/dofy/learn-vim)
+
+- ![tips12-0](figs/tips12-0.gif)]
+
+- ![tips12-1](figs/tips12-1.png)]
+
+- ![tips12-2](figs/tips12-2.png)]
+
+- ![tips12-3](figs/tips12-3.png)]
