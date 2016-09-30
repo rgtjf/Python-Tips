@@ -164,4 +164,43 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 
 - ![tips12-3](figs/tips12-3.png)
 
-## 13.	
+## 13.	Translate Tools
+
+- https://github.com/soimort/translate-shell
+  - Support Google Translate (default), Bing Translator, Yandex.Translate and Apertium
+  - Not designed to library(such as for python)
+  - Require gawk
+    - How to install gawk on Ubuntu 14.04?
+	```
+	sudo apt-get update
+	sudo apt-get install gawk
+	```
+	- You can set the default via the update-alternatives mechanism, using the command
+	```
+	sudo update-alternatives --config awk
+	```
+	e.g.
+	```
+	$ sudo update-alternatives --config awk
+	There are 2 choices for the alternative awk (providing /usr/bin/awk).
+
+	  Selection    Path            Priority   Status
+	------------------------------------------------------------
+	* 0            /usr/bin/gawk    10        auto mode
+	  1            /usr/bin/gawk    10        manual mode
+	  2            /usr/bin/mawk    5         manual mode
+
+	Press enter to keep the current choice[*], or type selection number: 2
+	update-alternatives: using /usr/bin/mawk to provide /usr/bin/awk (awk) in manual mode.
+	```
+	
+- https://github.com/terryyin/google-translate-python
+  - No key, no authentication needed.
+  - Now google has stop providing free translation API. So I have to switch to http://mymemory.translated.net/
+  
+- https://github.com/ssut/py-googletrans
+
+- goslate, Free Lunch is over!
+
+- textblob [It works!]
+  Update Info: https://github.com/sloria/TextBlob/issues/137#issuecomment-244777902
