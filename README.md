@@ -204,3 +204,27 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 
 - textblob [It works!]
   Update Info: https://github.com/sloria/TextBlob/issues/137#issuecomment-244777902
+
+- WebSite:
+  Google Document Translator: https://translate.google.com/?tr=f&hl=en (5000 limit)
+  Bing Translator https://www.bing.com/translator (5000 limit)
+  
+## 14.	[socher's homepage](http://www.socher.org/index.php/Main/HomePage)
+- [Latex Thesis Template](http://www.socher.org/index.php/Main/CompleteLatexThesisFramework)
+- [Some Useful Linux or Unix Commands](http://www.socher.org/index.php/Main/LinuxUnixCommands)
+
+## 15. Numpy BroadCasting
+- Ref: http://docs.scipy.org/doc/numpy/user/basics.broadcasting.html 
+  When operating on two arrays, NumPy compares their shapes element-wise. It starts with the trailing dimensions, and works its way forward. Two dimensions are compatible when
+  1. they are equal, or
+  2. one of them is 1
+  
+  ```
+  Image  (3d array): 256 x 256 x 3
+  Scale  (1d array):             3
+  Result (3d array): 256 x 256 x 3
+  
+  A      (4d array):  8 x 1 x 6 x 1
+  B      (3d array):      7 x 1 x 5
+  Result (4d array):  8 x 7 x 6 x 5
+  ```
