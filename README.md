@@ -45,7 +45,7 @@ urllib.request.urlretrieve(origin, dataset)
 
 ## 5. Add Python Path In Linux
 1. http://stackoverflow.com/questions/3402168/permanently-add-a-directory-to-pythonpath
-2. 
+2. ​
 ```
 vi ~/.bashrc
 export PYTHONPATH=${PYTHONPATH}:path1:path2
@@ -79,7 +79,7 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 - 去掉屏
   - Ctrl+b, x： 退出当前分出的一块小屏
   - Ctrl+b, &； 退出当前所有
-  
+
 ### 退出tmux
 - Ctrl+b, d: 退出并保留，下次可以重新进入
 
@@ -95,7 +95,7 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 - Ref: http://jupyter-notebook.readthedocs.io/en/latest/public_server.html
 - Prerequisite: A notebook configuration file
   create a notebook configuration file, ~/.jupyter/jupyter_notebook_config.py.
-  
+
   If you don’t already have one, create a config file for the notebook using the following command:
 
   ```
@@ -123,11 +123,11 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
   ```
 
 - Solution:
-  
+
   ```
   $ export CUDA_VISIBLE_DEVICES=0
   ```
-  
+
   ```
   $ sudo ln -s /usr/lib/x86_64-linux-gnu/libcuda.so.1 /usr/lib/x86_64-linux-gnu/libcuda.so
   ```
@@ -164,40 +164,40 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 
 - ![tips12-3](figs/tips12-3.png)
 
-## 13.	Translate Tools
+  ## 13.Translate Tools
 
 - https://github.com/soimort/translate-shell
   - Support Google Translate (default), Bing Translator, Yandex.Translate and Apertium
   - Not designed to library(such as for python)
   - Require gawk
     - How to install gawk on Ubuntu 14.04?
-	```
-	sudo apt-get update
-	sudo apt-get install gawk
-	```
-	- You can set the default via the update-alternatives mechanism, using the command
-	```
-	sudo update-alternatives --config awk
-	```
-	e.g.
-	```
-	$ sudo update-alternatives --config awk
-	There are 2 choices for the alternative awk (providing /usr/bin/awk).
+  ```
+  sudo apt-get update
+  sudo apt-get install gawk
+  ```
+  - You can set the default via the update-alternatives mechanism, using the command
+  ```
+  sudo update-alternatives --config awk
+  ```
+  e.g.
+  ```
+  $ sudo update-alternatives --config awk
+  There are 2 choices for the alternative awk (providing /usr/bin/awk).
 
-	  Selection    Path            Priority   Status
-	------------------------------------------------------------
-	* 0            /usr/bin/gawk    10        auto mode
-	  1            /usr/bin/gawk    10        manual mode
-	  2            /usr/bin/mawk    5         manual mode
+    Selection    Path            Priority   Status
+  ------------------------------------------------------------
+  * 0            /usr/bin/gawk    10        auto mode
+    1            /usr/bin/gawk    10        manual mode
+    2            /usr/bin/mawk    5         manual mode
 
-	Press enter to keep the current choice[*], or type selection number: 2
-	update-alternatives: using /usr/bin/mawk to provide /usr/bin/awk (awk) in manual mode.
-	```
-	
+  Press enter to keep the current choice[*], or type selection number: 2
+  update-alternatives: using /usr/bin/mawk to provide /usr/bin/awk (awk) in manual mode.
+  ```
+
 - https://github.com/terryyin/google-translate-python
   - No key, no authentication needed.
   - Now google has stop providing free translation API. So I have to switch to http://mymemory.translated.net/
-  
+
 - https://github.com/ssut/py-googletrans
 
 - goslate, Free Lunch is over!
@@ -208,8 +208,8 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 - WebSite:
   Google Document Translator: https://translate.google.com/?tr=f&hl=en (5000 limit)
   Bing Translator https://www.bing.com/translator (5000 limit)
-  
-## 14.	[socher's homepage](http://www.socher.org/index.php/Main/HomePage)
+
+  ## 14.[socher's homepage](http://www.socher.org/index.php/Main/HomePage)
 - [Latex Thesis Template](http://www.socher.org/index.php/Main/CompleteLatexThesisFramework)
 - [Some Useful Linux or Unix Commands](http://www.socher.org/index.php/Main/LinuxUnixCommands)
 
@@ -218,12 +218,12 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
   When operating on two arrays, NumPy compares their shapes element-wise. It starts with the trailing dimensions, and works its way forward. Two dimensions are compatible when
   1. they are equal, or
   2. one of them is 1
-  
+
   ```
   Image  (3d array): 256 x 256 x 3
   Scale  (1d array):             3
   Result (3d array): 256 x 256 x 3
-  
+
   A      (4d array):  8 x 1 x 6 x 1
   B      (3d array):      7 x 1 x 5
   Result (4d array):  8 x 7 x 6 x 5
@@ -231,25 +231,27 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 
 ## 16. How to fix Selenium WebDriverException: The browser appears to have exited before we could connect?
 - [Ref](http://stackoverflow.com/questions/26070834/how-to-fix-selenium-webdriverexception-the-browser-appears-to-have-exited-befor)
+
+  ​
+
   ```bash
   $ echo $DISPLAY
-  $ export DISPLAY=:0
+  $ export DISPLAY=:0 # export DISPLAY=:localhost:11.0
   $ python login.py
-  $ upgrade_oh_my_zsh
   ```
-  
+
 ## 17.Linux 更改文件权限，所有者
-  - 语法：chmod [who] [+ | - | =] [mode] 文件名
-  - 命令中各选项的含义为
+- 语法：chmod [who] [+ | - | =] [mode] 文件名
+- 命令中各选项的含义为
     - u 表示“用户（user）”，即文件或目录的所有者。
     - g 表示“同组（group）用户”，即与文件属主有相同组ID的所有用户。
     - o 表示“其他（others）用户”。
     - a 表示“所有（all）用户”。它是系统默认值。
-  - 操作符号可以是：
+- 操作符号可以是：
     - + 添加某个权限。
     - - 取消某个权限。
     - = 赋予给定权限并取消其他所有权限（如果有的话）。
-  - 设置mode所表示的权限可用下述字母的任意组合：
+- 设置mode所表示的权限可用下述字母的任意组合：
     - r 可读。
     - w 可写。
     - x 可执行。
@@ -259,8 +261,30 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
     - u 与文件属主拥有一样的权限。
     - g 与和文件属主同组的用户拥有一样的权限。
     - o 与其他用户拥有一样的权限。
-  
-  ```bash
+
+```bash
   chmod -R 755 data_dir
   chown -R user data_dir
-  ```
+```
+
+## 17. Python 学习路线
+- https://learnxinyminutes.com/docs/python/
+- http://wuzhiwei.net/be_pythonic/
+    - http://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html
+    - api: https://docs.python.org/2/library/functions.html
+
+## 18. Terminal 快捷键 
+
+```bash
+Ctrl + A:	Go to the beginning
+Ctrl + E:   Go to the end
+Ctrl + <-:  Move cursor forward one word on the current line
+Ctrl + ->:  Move cursor backward one word on the current line
+
+Ctrl + L:   Clear the Screen
+Ctrl + U:   Clear the line before the cursor
+Ctrl + K:   Clear the line after the cursor
+Ctrl + H:   Same as backspace
+
+Ctrl + R:   Search through previously used commands
+```
