@@ -288,3 +288,90 @@ Ctrl + H:   Same as backspace
 
 Ctrl + R:   Search through previously used commands
 ```
+## 19. Matplotlib.pyplot 使用
+
+- example1
+
+  ```python
+  import matplotlib.pyplot as plt
+  x = [1, 2, 3, 4]
+  y = [1, 4, 9, 16]
+  plt.plot(x, y)
+  plt.show()
+  ```
+
+  ​
+
+- example2
+
+  设置折线点的属性
+
+  ```python
+  import numpy as np
+  import matplotlib.pyplot as plt
+
+  # evenly sampled time at 200ms intervals
+  t = np.arange(0., 5., 0.2)
+
+  # red dashes, blue squares and green triangles
+  plt.plot(t, t, 'r--', t, t**2, 'bs', t, t**3, 'g^-')
+  plt.show()
+  ```
+
+- example3
+
+  解决中文编码问题
+
+  ```python
+
+  import matplotlib.font_manager as fm
+  myfont = fm.FontProperties(fname='C:/Windows/Fonts/msyh.ttc')
+
+  import matplotlib.pyplot as plt
+
+  x = [1, 2, 3, 4]
+  y = [1, 4, 9, 16]
+
+  plt.plot(x, y, 'rs-')
+
+  plt.xlabel('横坐标轴', fontproperties=myfont, fontsize=30, color='black')
+  plt.ylabel('纵坐标轴', fontproperties=myfont, fontsize=30, color='black')
+  plt.title("解决中文编码问题",fontproperties=myfont, fontsize=28, color='black')
+  		
+  plt.show()
+  ```
+
+- example 4
+
+  在点上面打标签
+
+  ```python
+  import matplotlib.pyplot as plt
+
+  x = [1, 2, 3, 4]
+  y = [1, 4, 9, 16]
+
+  plt.plot(x, y, 'rs-')
+  for xy in zip(x, y):
+      plt.annotate("(%s, %s)" % xy, xy=xy, xytext=(-40, 8), textcoords='offset points')
+  plt.show()
+  ```
+
+- example 5
+
+  多条折线添加标注
+
+  ```python
+  import matplotlib.pyplot as plt
+
+  x = [1, 2, 3, 4]
+  y1 = [1, 4, 9, 16]
+  y2 = [1, 8, 27, 64]
+  plt.plot(x, y1, 'rs-', label='two')
+  plt.plot(x, y2, 'bs-', label='three')
+
+  plt.legend(loc='lower right')
+  plt.show()
+  ```
+
+  ​
