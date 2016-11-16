@@ -91,7 +91,15 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 - Ctrl+b, PageUp: 在session中读取以前的页面，按~键退出
 - Ctrl+b, 左右方向将：修改panel大小
 
+### Update 0:
+- Ctrl+b, ,: 重命名当前窗口；这样便于识别
+- Ctrl+b,$: 重命名当前session
+- Ctrl+b,z: 挂起当前session；恢复隐藏的session
+- Ctrl+b,s: 以菜单方式显示和选择会话
+
+
 ## 9.jupyter-notebook
+
 - Ref: http://jupyter-notebook.readthedocs.io/en/latest/public_server.html
 - Prerequisite: A notebook configuration file
   create a notebook configuration file, ~/.jupyter/jupyter_notebook_config.py.
@@ -375,3 +383,6 @@ Ctrl + R:   Search through previously used commands
   ```
 
   ​
+
+## Pycharm Edit 快捷键
+
