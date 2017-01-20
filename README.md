@@ -386,3 +386,70 @@ Ctrl + R:   Search through previously used commands
 
 ## Pycharm Edit 快捷键
 
+
+
+## Python Class __call__ 方法
+
+```
+class Animal(object):
+
+    __call__(self, words):
+        print "Hello: ", words
+
+if __name__ == "__main__":
+    cat = Animal()
+    cat("I am cat!")
+
+>>> Hello: I am cat!
+```
+
+## Python classmethod 和 staticmethod
+- staticmethod 相当于函数
+- classmethod 可以调用类函数，比如构造一个对象等
+
+## Python selenium & autoit
+- http://selenium-python.readthedocs.io/api.html
+- Notes:
+  - 1. iframe 和 windows 之间的切换
+  - 2. upload file: Hard to modify
+	- autoit
+  - 3. lxml.html 解决table问题
+    - http://stackoverflow.com/questions/27592444/getting-text-of-a-table-quickly-in-selenium
+  - 4. Others
+    - javascript in selenium  http://stackoverflow.com/questions/38315819/how-to-execute-a-javascript-function-defined-in-the-website-script-with-seleniu
+	
+## Asiya
+- http://nlp.lsi.upc.edu/asiya/Asiya_technical_manual_v3.0.pdf
+- Metric Set
+  - Lexical Similarity
+    - Edit Distance
+	   - WER (Word Error Rate): Levenshtein Distance
+	   - PER (Position-independent WER): Word Order is not taken into consideration
+	   - TER (Translation Edit Rate)
+	   - ALIGN
+	   - BLEU
+	   - NIST
+	   - P_l (Lexical Precision)
+	- Lexical Recall
+	   - ROUGE
+	   - R_l
+	- F_Measure
+	   - GTM
+	   - MENETOR
+	   - F_l
+	   - O_l
+	- NGRAM
+  - Syntactic Similarity
+    - On Shallow Parsing (SP)
+	- On Dependency Parsing (DP)	
+    - On Constituent Parsing (CP)
+  - Semantic Similarity
+	- On Named Entities (NE)
+	- On Explicit Semantic Analysis (ESA)
+	- On Semantic Roles (SR)
+	- On Discourse Representations (DR)
+	
+## Multiple selections in pycharm
+- https://blog.jetbrains.com/pycharm/2014/09/feature-spotlight-multiple-selections-in-pycharm/
+  - Alt + Mouse Click
+  - Alt + J (Select Next Occurrence)
