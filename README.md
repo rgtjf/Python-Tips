@@ -453,3 +453,19 @@ if __name__ == "__main__":
 - https://blog.jetbrains.com/pycharm/2014/09/feature-spotlight-multiple-selections-in-pycharm/
   - Alt + Mouse Click
   - Alt + J (Select Next Occurrence)
+
+  
+## 26. precision 服务器安装指南
+- Anaconda
+- python-package
+    - pip install --upgrade pip
+    - /opt/dynet-base/dynet/build/python# python setup.py install 
+	- pip install tensorflow-gpu
+	- pyprind
+	- Lasagne
+      - pip install -r https://raw.githubusercontent.com/Lasagne/Lasagne/v0.1/requirements.txt
+	  - pip install Lasagne==0.1
+	- pip install --upgrade gensim
+	- /home/precision/xgboost/python-package# python setup.py install
+	- pip install pyjsonrpc
+	- pip install selenium
