@@ -469,3 +469,18 @@ if __name__ == "__main__":
 	- /home/precision/xgboost/python-package# python setup.py install
 	- pip install pyjsonrpc
 	- pip install selenium
+	
+## 27. 打包、解压缩
+
+- tar czf small.tar.gz small(目录名)  ;压缩并打包目录
+- tar zxvf small.tar.gz
+
+## 28. Latex font size
+
+```
+   \tiny  < \scriptsize \footnotesize < \small
+ < \normalsize
+ < \large < \Large < \LARGE
+ < \huge  < \Huge
+```
+
