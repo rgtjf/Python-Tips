@@ -97,6 +97,8 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
 - Ctrl+b,z: 挂起当前session；恢复隐藏的session
 - Ctrl+b,s: 以菜单方式显示和选择会话
 
+### Update 1:
+- Install on CentOS, https://gist.github.com/Root-shady/d48d5282651634f464af
 
 ## 9.jupyter-notebook
 
