@@ -143,7 +143,10 @@ http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
   ```
 
 ## 11.PyCharm使用技巧
+Update 2017.10.28
+- `Alt+J` 类似sublime ``Ctrl+D``
 
+---
 - `ctrl+alt+L`, 格式化代码
 - `alt+enter`, 出错万能键，不同场景有不同的表现方式，在还没import(install)模块名上使用会import(install)相对应的模块，在方法名上使用补注释，在测试中使用帮你补充断言代码……
 - `ctrl+space`, 万能提示键 `ctrl+space` 万能提示键，PyCharm的会根据上下文提供补全。不仅是代码提示，`ctrl+f`搜索的时候，不知道该键入啥时就按下，经常给人惊喜。在windows下由于输入法无法使用这个快捷键，`ctrl+alt+s`打开设置键入 keymap，在Keymap中搜索basic可以找到并修改它 (改为`shift+H`)
