@@ -489,3 +489,57 @@ if __name__ == "__main__":
 ## 29. pycharm 中修改 code_style 为 ``Google``
    ![code_style](figs/code-style.jpg)
 
+   
+## 30. pycharm jupyter 设置
+
+### 服务器后台tmux:
+```
+# 浏览当前已有tmux窗口
+tmux ls 
+# 如果没有，新建一个tmux窗口
+tmux 
+# 恢复原来的tmux窗口
+tmux attach -t 0
+# 退出tmux, [d]etach 
+Ctrl+b, d
+# 永久退出tmux
+Ctrl+b, &
+```
+
+### 服务器jupyter
+```
+# 生成jupyter配置文件
+jupyter notebook --generate-config
+# 编辑jupyter配置文件
+vi ~/.jupyter/jupyter_notebook_config.py
+```
+
+### 编辑jupyter配置文件
+```
+# 允许任何ip访问
+c.NotebookApp.ip='*'
+# 不打开浏览器
+c.NotebookApp.open_browser = False
+```
+
+### 启动 jupyter
+```
+jupyter notebook 
+# [all ip adresss]:8888
+# maybe: tokens
+```
+
+### 本地pycharm配置
+ ![code_style](figs/tips30.jpg)
+  - 这里的url可以用任何一个notebook的url，比如http://localhost:8888, 前提是localhost打开了jupyter。
+  - 使用服务器的jupyter相当于调用了服务器中的python，**拥有服务器存在的package**
+  
+### 本地和服务器同步
+  - deployment，设置见Tips-7
+    - Upload
+    - Download
+    - Compare with
+  - Note，尽量使用jupyter上的保存按钮，之后再进行Upload和Download操作
+    - ![code_style](figs/tips-30-1.jpg)
+    - ![code_style](figs/tips-30-2.jpg)
+  - Note, 可以不需要关闭文件
