@@ -545,3 +545,12 @@ jupyter notebook
     - ![code_style](figs/tips-30-1.jpg)
     - ![code_style](figs/tips-30-2.jpg)
   - Note, 可以不需要关闭文件
+
+## 31. precision 服务器打开 Stanford CoreNLP Server
+
+  ```bash
+  cd /home/junfeng/tools/stanford-corenlp-full-2015-12-09
+  # tmux 新建一个使之一直可以用
+  # 参考 https://stanfordnlp.github.io/CoreNLP/corenlp-server.html
+  java -mx8g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
+  ```
